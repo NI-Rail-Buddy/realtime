@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <!-- This script tag bootstraps PyScript -->
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <style>
+        body {background-color: black;}
+        h1   {color: white;
+            background-color: darkblue;
+            font-family: "Arial";
+            font-size: 32pt;
+            font-weight: 400pt;
+            margin: 0px;
+        }
+        h2   {color: white;
+            background-color: darkblue;
+            font-family: Arial;
+            font-size: 26pt;
+            font-weight: 400pt;
+            margin: 0;
+        }
+        p    {color: white;
+            font-family: Arial;
+            font-size: 32pt;
+            font-weight: 400pt;
+        }
+        .pw {color: white;
+            font-family: Arial;
+            font-size: 32pt;
+            font-weight: 400pt;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        .py {color: yellow;
+            font-family: Arial;
+            font-size: 32pt;
+            font-weight: 400pt;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        .train_element {color: white;
+            font-family: Arial;
+            width: 100%;
+            display: inline;
+            margin: 0;
+        }
+        .grey {
+            background-color: grey;
+            height: 5px;
+            margin: 1px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Departures from: York Street</title>
+</head>
+<body style="margin:0;">
+    <div style="display: inline; background-color: darkblue; height: fit-content">
+        <h1 style="width: 100%; background-color: darkblue">Departures from York Street Train Station</h1>
+        <div style="background-color: darkblue; display: inline; border-bottom: 5px white">
+            <h2 style="width: 60%; float: left; background-color: darkblue">Destination:</h2>
+            <h2 style="width: 20%; float: left; background-color: darkblue">Platform:</h2>
+            <h2 style="width: 20%; float: left; background-color: darkblue">Expected:</h2>
+        </div>
+    </div>
+
+
+
+    <div class="train_element">
+        <py-script class="py" style="width: 60%; float: left">
+            from pyscript import display
+            display("Grand Central Station")
+        </py-script>
+        <py-script class="pw" style="width: 20%; float: left">
+            from pyscript import display
+            display("1")
+        </py-script>
+        <py-script class="pw" style="width: 20%; float: left">
+            from pyscript import display
+            display("21:06")
+        </py-script>
+    </div>
+
+    <div class="train_element">
+        <py-script class="py" style="width: 60%; float: left">
+            from pyscript import display
+            display("Grand Central Station")
+        </py-script>
+        <py-script class="pw" style="width: 20%; float: left">
+            from pyscript import display
+            display("1")
+        </py-script>
+        <py-script class="pw" style="width: 20%; float: left">
+            from pyscript import display
+            display("21:06")
+        </py-script>
+    </div>
+
+    <div class="train_element">
+        <py-script class="py" style="width: 60%; float: left">
+            from pyscript import display
+            display("Grand Central Station")
+        </py-script>
+        <py-script class="pw" style="width: 20%; float: left">
+            from pyscript import display
+            display("1")
+        </py-script>
+        <py-script class="pw" style="width: 20%; float: left">
+            from pyscript import display
+            display("21:06")
+        </py-script>
+    </div>
+
+    <py-script class="py">
+        import sys
+        from pyscript import display
+        display(sys.version)
+    </py-script>
+    <py-script class="pw">
+        from pyscript import display
+
+        for x in range(0, 5):
+            display("Hello")
+    </py-script>
+</body>
+</html>
