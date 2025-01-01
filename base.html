@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{% block title %}Dispatcher{% endblock %}</title>
+    <style>body{font-family: Infra}</style>
+    <style>.topnav{background-color: yellow; color: black}</style>
+    <!-- <style>@infra-bold {font-family: Infra; src: url(sansation_light.woff);}</style> -->
+</head>
+<body>
+    <div class="topnav">
+        <p><b>Quick Access:</b></p>
+        <a class="active" id="Customer Support" href="/ys">Customer Support Mode</a><br>
+        <a class="active" id="Dispatcher" href="/ys">Dispatcher Mode</a>
+    </div>
+
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+<h3>Support:</h3>
+<p>Email <b>grahamconnor647@gmail.com</b> for support relating to this website.</p>
+<h3>Legal & Thanks:</h3>
+<p>Website © Connor Graham, 2025</p>
+<p>Transport Information supplied by Translink Opendata API.</p>
+<p>Contains public sector information licensed under the Open Government Licence v3.0.</p>
+<p>With thanks to Graham Elliott at Translink, Iain Fleming at the Department of Finance/OpenDataNI.</p>
+</body>
+</html>
